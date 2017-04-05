@@ -39,6 +39,7 @@ float divisionOpr(float num1, float num2)
         return resultado;
 }
 
+
 int factorialOpr(int num1)
 {
     int z;
