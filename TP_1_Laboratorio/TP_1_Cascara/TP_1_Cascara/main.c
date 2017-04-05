@@ -8,9 +8,11 @@ int main()
     int suma, resta, multiplicacion, factorial;
     float division;
     char seguir='s';
-    int opcion=0;
-    int Op1 = 0;
-    int Op2 = 0;
+    int opcion= 0;
+    int Op1= 0;
+    int Op2= 0;
+    int flagA=0;
+    int flagB=0;
 
     while(seguir=='s')
     {
@@ -43,61 +45,113 @@ int main()
         switch(opcion)
         {
         case 1:
-            printf("Ingrese el operando:");
+            printf("\t Ingrese el operando:\n\n");
             scanf("%d",&x);
             Op1 = 1;
+            flagA= 1;
             break;
         case 2:
-            printf("Ingrese el operando:");
+            printf("\t Ingrese el operando:\n\n");
             scanf("%d",&y);
             Op2= 2;
+            flagB= 1;
             break;
         case 3:
-            suma= sumaOpr(x,y);
-            printf("\t La suma es %d\n", suma);
+            if (flagA== 1 && flagB== 1)
+            {
+                suma= sumaOpr(x,y);
+                printf("\t La suma es %d\n\n", suma);
+            }
+            else
+            {
+                printf("\t Ingrese ambos operandos para realizar la operacion!!\n\n");
+            }
             system("pause");
             break;
         case 4:
-            resta= restaOpr(x,y);
-            printf("\t La resta es %d\n", resta);
+            if (flagA== 1 && flagB== 1)
+            {
+                resta= restaOpr(x,y);
+                printf("\t La resta es %d\n\n", resta);
+            }
+            else
+            {
+                printf("\t Ingrese ambos operandos para realizar la operacion!!\n\n");
+            }
             system("pause");
             break;
         case 5:
-            division = divisionOpr(x,y);
-            if (y != 0)
+            if (flagA== 1 && flagB== 1)
             {
-                printf("\t La division es %.2f\n", division);
+                division = divisionOpr(x,y);
+                if (y != 0)
+                {
+                    printf("\t La division es %.2f\n\n", division);
+                }
             }
+            else
+            {
+                printf("\t Ingrese ambos operandos para realizar la operacion!!\n\n");
+            }
+
             system("pause");
             break;
         case 6:
-            multiplicacion = multiplicacionOpr(x,y);
-            printf("\t La multiplicacion es %d\n", multiplicacion);
+            if (flagA== 1 && flagB== 1)
+            {
+                multiplicacion = multiplicacionOpr(x,y);
+                printf("\t La multiplicacion es %d\n\n", multiplicacion);
+            }
+            else
+            {
+                printf("\t Ingrese ambos operandos para realizar la operacion!!\n\n");
+            }
+
             system("pause");
             break;
         case 7:
-            factorial = factorialOpr(x);
-            printf("\t El factorial de A es %d\n", factorial);
+            if (flagA== 1)
+            {
+                factorial = factorialOpr(x);
+                printf("\t El factorial de A es %d\n\n", factorial);
+            }
+            else
+            {
+                printf("\t Ingrese el operando A para realizar el factorial!!\n\n");
+            }
             system("pause");
             break;
         case 8:
-            suma= sumaOpr(x,y);
-            printf("\t La suma es %d\n", suma);
-
-            resta= restaOpr(x,y);
-            printf("\t La resta es %d\n", resta);
-
-            division = divisionOpr(x,y);
-            if (y != 0)
+            if (flagA== 1 && flagB== 1)
             {
-                printf("\t La division es %.2f\n", division);
+                suma= sumaOpr(x,y);
+                printf("\t La suma es %d\n\n", suma);
+
+                resta= restaOpr(x,y);
+                printf("\t La resta es %d\n\n", resta);
+
+                division = divisionOpr(x,y);
+                if (y != 0)
+                {
+                    printf("\t La division es %.2f\n\n", division);
+                }
+
+                multiplicacion = multiplicacionOpr(x,y);
+                printf("\t La multiplicacion es %d\n\n", multiplicacion);
             }
-
-            multiplicacion = multiplicacionOpr(x,y);
-            printf("\t La multiplicacion es %d\n", multiplicacion);
-
-            factorial = factorialOpr(x);
-            printf("\t El factorial de A es %d\n\n", factorial);
+            else
+            {
+                printf("\t Ingrese ambos operandos para realizar las operaciones!!\n\n");
+            }
+            if (flagA== 1)
+            {
+                factorial = factorialOpr(x);
+                printf("\t El factorial de A es %d\n\n", factorial);
+            }
+            else
+            {
+                printf("\t Ingrese el operando A para realizar el factorial!!\n\n");
+            }
             system("pause");
             break;
         case 9:
