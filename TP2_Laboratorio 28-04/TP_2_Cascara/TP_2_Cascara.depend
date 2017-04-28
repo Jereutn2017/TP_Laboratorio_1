@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1492807044 source:c:\users\edu\desktop\tp2 entraga 28-04 - copia\tp_2_cascara\funciones.c
+
+1492900182 source:c:\users\edu\desktop\tp2 entraga 28-04 copia 2\tp_2_cascara\funciones.c
+
+1492910091 source:c:\users\edu\desktop\tp2 entraga 28-04 copia 2\tp_2_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
+1492900728 c:\users\edu\desktop\tp2 entraga 28-04 copia 2\tp_2_cascara\funciones.h
+
+1493332234 source:c:\users\jjuan\desktop\tp2 entraga 28-04 la mas completa\tp_2_cascara\funciones.c
+	"funciones.h"
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1493335294 source:c:\users\jjuan\desktop\tp2 entraga 28-04 la mas completa\tp_2_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+	<conio.h>
+
+1493334284 c:\users\jjuan\desktop\tp2 entraga 28-04 la mas completa\tp_2_cascara\funciones.h
+
+1493349825 source:c:\users\edu\desktop\tp2 entraga 28-04 la mas completa\tp_2_cascara\funciones.c
+	"funciones.h"
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+
+1493354513 c:\users\edu\desktop\tp2 entraga 28-04 la mas completa\tp_2_cascara\funciones.h
+
+1493352732 source:c:\users\edu\desktop\tp2 entraga 28-04 la mas completa\tp_2_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+	<conio.h>
+
